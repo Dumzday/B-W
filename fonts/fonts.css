@@ -1,0 +1,36 @@
+@font-face{
+
+    font-family: "Helvetica Lite";
+    
+    src: url('/fonts/HelveticaNeueLTPro-Lt.otf');
+}
+@font-face{
+
+    font-family: "Helvetica Mid";
+    
+    src: url('/fonts/HelveticaNeueLTPro-Md.otf');
+}
+@font-face{
+
+    font-family: "Helvetica Roman";
+    
+    src: url('/fonts/HelveticaNeueLTPro-Roman.otf');
+}
+@font-face{
+
+    font-family: "Merriweather light";
+    
+    src: url('/fonts/Merriweather-Light.ttf');
+}
+@font-face{
+
+    font-family: "Merriweather light Italic";
+    
+    src: url('/fonts/Merriweather-LightItalic.ttf');
+}
+@font-face{
+
+    font-family: "Merriweather Regular";
+    
+    src: url('/fonts/Merriweather-Regular.ttf');
+}
