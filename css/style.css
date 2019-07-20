@@ -8,6 +8,13 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,16 +31,96 @@ p {
           align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .main-nav {
+    padding: 0;
+    margin: 0;
+    width: 48%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .main-nav_link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #989696;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.52px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-nav_link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav_link {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0 5px 0;
+    font-size: 22px;
+  }
+}
+
+.main-nav_link:hover {
+  color: #010101;
+}
+
+.main-nav_link__active {
+  color: #010101;
 }
 
 .main-nav li {
   list-style: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .main-nav-left li:last-child {
+    margin-right: 16%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav-left li:last-child {
+    margin-right: 0;
+  }
+}
+
 .main-nav li {
   margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav li {
+    margin-right: 0;
+  }
 }
 
 .logo {
@@ -42,6 +129,12 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
 }
 
 .nav-row {
@@ -54,8 +147,129 @@ p {
           justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 h1.logo {
   margin: 0;
   padding: 0;
+}
+
+.section-title {
+  color: #1d1e1f;
+  font-family: "Helvetica Lite", Sans serif;
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 0.88px;
+}
+
+.passion {
+  height: 90%;
+  text-align: center;
+}
+
+.passion_title {
+  margin-top: 260px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .passion_title {
+    margin-top: 80px;
+    margin-bottom: 25px;
+  }
+}
+
+.section_text {
+  color: #898888;
+  font-family: "Merriweather light Italic", Sans serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.48px;
+  margin-top: 5px;
+}
+
+.btn {
+  color: #000000;
+  background-color: white;
+  width: 188px;
+  height: 57px;
+  border: 1px solid #000000;
+  font-family: "Helvetica Mid", Sans serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.52px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.passion_btn {
+  margin-top: 45px;
+}
+
+.passion_nav {
+  width: 15px;
+}
+
+.passion_nav--position {
+  margin-top: 280px;
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .passion_nav--position {
+    margin: 40px auto;
+  }
+}
+
+.passion_nav ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style: none;
+}
+
+.pasion_link-dot {
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+
+.pasion_link-dot:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+}
+
+.pasion_link-dot:hover:before {
+  background-color: #000;
+}
+
+.pasion_link-dot__active {
+  opacity: 0.65;
 }
 /*# sourceMappingURL=style.css.map */
